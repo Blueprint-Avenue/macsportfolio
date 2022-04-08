@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import LogoComponent from "../subComponents/LogoComponent";
+import PowerButton from "../subComponents/PowerButton";
 
 const MainContainer = styled.div`
 	background: ${(props) => props.theme.body};
@@ -25,7 +27,10 @@ const Container = styled.div`
 export const Main = () => {
 	return (
 		<MainContainer>
-			<Container>Main</Container>
+			<Container>
+				<PowerButton />
+				<LogoComponent />
+			</Container>
 		</MainContainer>
 	);
 };

@@ -1,9 +1,9 @@
 export const lightTheme = {
 	body: "#EEEEEE",
-	text: "#F3E9DD",
+	text: "#00092C",
 	fontFamily: "'Source Sans Pro', sans-serif",
 	bodyRgba: "	238, 238, 238",
-	textRgba: "	243, 233, 221",
+	textRgb: "		0, 9, 44",
 };
 
 export const DarkTheme = {
