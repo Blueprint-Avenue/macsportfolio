@@ -1,0 +1,63 @@
+
+
+Fonts
+
+----------------------------------------------
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&family=Pacifico&family=Source+Sans+Pro:wght@400;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+----------------------------------------------
+
+
+Skills
+----------------------------------------------
+I love to create an array of new designs that speaks to the client. I like to Keep it clean, minimal and simple.
+I LIKE TO DESIGN
+Web Design
+Mobile Apps
+TOOLS
+Figma
+
+I value the businesses or brands for which i'm creating, thus i enjoy bringing new ideas to life.
+SKILLS
+Html, Css, Js, React, React-Native, Next Js, Redux, Sass, Bootstrap, Tailwind, MongoDb, NodeJs, Express, Firebase etc.
+
+TOOLS
+VScode, Github, Codepen etc.
+
+----------------------------------------------
+
+About Text
+
+----------------------------------------------
+I'm Samiya McIntosh and I am from Minneapolis, Minnesota, currently located in Los Angeles.
+
+I've always had a passion to design and a passion to program since my very first Myspace page in ~2006 as a freshman in highschool.
+
+I love the challenge of solving new problems, and expanding my professional knowledge.
+
+I attended Nucamp Coding Bootcamp to make a career switch into software development as a fullstack developer.
+During my bootcamp I received high marks on all my assignments, and graduated with honors.
+
+I also have a Bachelors of Arts degree in film production from Augsburg University.
+
+I love to create simple yet beautiful websites with great user experience.
+
+I'm interested in the whole fullstack, like trying new things and building great projects. I love to cook, I am an avid basketball fan, and I collect vinyls.
+
+I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+----------------------------------------------
+
+
+Theme
+----------------------------------------------
+    body:"#DAB88B",
+    text:"#F3E9DD",
+    fontFamily:"'Source Sans Pro', sans-serif",
+    bodyRgba : "252, 246, 244",
+    textRgba:"0,0,0",
+
+
+----------------------------------------------
