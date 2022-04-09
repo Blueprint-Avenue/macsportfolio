@@ -11,13 +11,13 @@ const Power = styled.button`
 	background-color: #eeeeee;
 	padding: 0.3rem;
 	border-radius: 50%;
-	border: 1px solid #00092c;
+	border: 2px solid #00092c;
 	width: 2.5rem;
 	height: 2.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 3;
+	z-index: 1;
 	cursor: pointer;
 
 	&:hover {
