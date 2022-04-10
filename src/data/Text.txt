@@ -22,10 +22,12 @@ Figma
 
 I value the businesses or brands for which i'm creating, thus i enjoy bringing new ideas to life.
 SKILLS
-Html, Css, Js, React, React-Native, Next Js, Redux, Sass, Bootstrap, Tailwind, MongoDb, NodeJs, Express, Firebase etc.
+I am skilled in Html, Css, Js, React, React-Native, Next Js, Redux, Sass, Bootstrap, Tailwind, MongoDb, NodeJs, Express, Firebase etc.
+
+I am also skilled in Adobe Suite (Photoshop, Premier Pro, etc.), Microsoft Office, and Final Cut Pro.
 
 TOOLS
-VScode, Github, Codepen etc.
+VScode, Github, Codepen, Adobe Suite etc.
 
 ----------------------------------------------
 

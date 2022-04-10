@@ -31,7 +31,7 @@ const Container = styled.div`
 `;
 
 const Contact = styled(NavLink)`
-	color: ${(props) => props.theme.text};
+	color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
 	position: absolute;
 	top: 2rem;
 	right: calc(1rem + 2vw);
@@ -40,13 +40,13 @@ const Contact = styled(NavLink)`
 `;
 
 const BLOG = styled(NavLink)`
-	color: ${(props) => props.theme.text};
+	color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
 	position: absolute;
 	top: 50%;
-	right: calc(1rem + 2vw);
+	right: 2rem;
 	transform: rotate(90deg) translate(-50%, -50%);
 	text-decoration: none;
-	z-index: 1;
+	z-index: 3;
 `;
 
 const WORK = styled(NavLink)`
@@ -76,7 +76,7 @@ const ABOUT = styled(NavLink)`
 `;
 
 const SKILLS = styled(NavLink)`
-	color: ${(props) => props.theme.text};
+	color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
 	align-items: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -125,7 +125,20 @@ const DarkDiv = styled.div`
 	right: 50%;
 	width: ${(props) => (props.click ? "50%" : "0%")};
 	height: ${(props) => (props.click ? "100%" : "0%")};
-	z-index: 0.07;
+	z-index: 0.09;
+	transition: height 0.5s ease, width 1s ease;
+`;
+
+const LightDiv = styled.div`
+	position: absolute;
+	margin-top: 0;
+	background-color: #00092c;
+	background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+	margin-bottom: 0;
+	left: 50%;
+	width: ${(props) => (props.click ? "50%" : "0%")};
+	height: ${(props) => (props.click ? "100%" : "0%")};
+	z-index: 0.09;
 	transition: height 0.5s ease, width 1s ease;
 `;
 
@@ -136,11 +149,13 @@ export const Main = () => {
 	return (
 		<MainContainer>
 			<DarkDiv click={click} />
+			<LightDiv click={click} />
 			<Container>
 				<PowerButton />
 				<LogoComponent theme={click ? "dark" : "light"} />
 				<SocialIcons theme={click ? "dark" : "light"} />
 				<DarkDiv click={click} />
+				<LightDiv click={click} />
 				<Center click={click}>
 					<Basketball
 						onClick={() => handleClick()}
@@ -152,14 +167,15 @@ export const Main = () => {
 				<Contact
 					target="_blank"
 					to={{ pathname: "mailto:skmcintosh20@gmail.com" }}
+					click={click}
 				>
 					<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
-						Say what's up..
+						Say hi..
 					</motion.h2>
 				</Contact>
-				<BLOG to="/blog">
+				<BLOG to="/blog" click={click}>
 					<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
-						Blog
+						BLOG
 					</motion.h2>
 				</BLOG>
 				<WORK to="/work" click={click}>
@@ -173,7 +189,7 @@ export const Main = () => {
 							About Me..
 						</motion.h2>
 					</ABOUT>
-					<SKILLS to="/skills">
+					<SKILLS to="/skills" click={click}>
 						<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
 							My Skills..{" "}
 						</motion.h2>

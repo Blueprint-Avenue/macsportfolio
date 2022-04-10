@@ -476,7 +476,7 @@ export const Design = (props) => {
 	);
 };
 
-export const Develope = (props) => {
+export const Develop = (props) => {
 	return (
 		<svg
 			color="#00092C"
