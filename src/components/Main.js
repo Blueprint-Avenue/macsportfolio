@@ -169,28 +169,83 @@ export const Main = () => {
 					to={{ pathname: "mailto:skmcintosh20@gmail.com" }}
 					click={click}
 				>
-					<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
+					<motion.h2
+						initial={{
+							y: -200,
+							transition: { type: "spring", duration: 1.5, delay: 1 },
+						}}
+						animate={{
+							y: 0,
+							transition: { type: "spring", duration: 1.5, delay: 1 },
+						}}
+						whileHover={{ scale: 1.1 }}
+						whileTap={0.9}
+					>
 						Say hi..
 					</motion.h2>
 				</Contact>
 				<BLOG to="/blog" click={click}>
-					<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
+					<motion.h2
+						initial={{
+							y: -200,
+							transition: { type: "spring", duration: 1.5, delay: 1 },
+						}}
+						animate={{
+							y: 0,
+							transition: { type: "spring", duration: 1.5, delay: 1 },
+						}}
+						whileHover={{ scale: 1.1 }}
+						whileTap={0.9}
+					>
 						BLOG
 					</motion.h2>
 				</BLOG>
 				<WORK to="/work" click={click}>
-					<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
+					<motion.h2
+						initial={{
+							y: -200,
+							transition: { type: "spring", duration: 1.5, delay: 1 },
+						}}
+						animate={{
+							y: 0,
+							transition: { type: "spring", duration: 1.5, delay: 1 },
+						}}
+						whileHover={{ scale: 1.1 }}
+						whileTap={0.9}
+					>
 						Work
 					</motion.h2>
 				</WORK>
 				<BottomBar>
 					<ABOUT to="/about" click={click}>
-						<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
+						<motion.h2
+							initial={{
+								y: 200,
+								transition: { type: "spring", duration: 1.5, delay: 1 },
+							}}
+							animate={{
+								y: 0,
+								transition: { type: "spring", duration: 1.5, delay: 1 },
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={0.9}
+						>
 							About Me..
 						</motion.h2>
 					</ABOUT>
 					<SKILLS to="/skills" click={click}>
-						<motion.h2 whileHover={{ scale: 1.1 }} whileTap={0.9}>
+						<motion.h2
+							initial={{
+								y: 200,
+								transition: { type: "spring", duration: 1.5, delay: 1 },
+							}}
+							animate={{
+								y: 0,
+								transition: { type: "spring", duration: 1.5, delay: 1 },
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={0.9}
+						>
 							My Skills..{" "}
 						</motion.h2>
 					</SKILLS>

@@ -1,24 +1,15 @@
 export const Blogs = [
 	{
 		id: 1,
-		name: "Building a Porfolio website can be daunting",
-		tags: ["react", "animation", "styled-components"],
-		date: "13 May, 2021",
+		name: "How To Build A Portfolio Website That Shines",
+		tags: ["freelancer", "design", "user-friendly"],
+		date: "22 March, 2022",
 		imgSrc:
-			"https://res.cloudinary.com/practicaldev/image/fetch/s--sBeV06Xc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2yrzy75q4dzibqz6rf82.png",
-		link: "https://dev.to/codebucks/build-website-with-reactjs-styled-components-and-gsap-for-scrolling-animations-2f10",
+			"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2021/09/build_a_portfolio_website_-_article_image.jpg",
+		link: "https://www.forbes.com/advisor/business/software/build-a-portfolio-website/",
 	},
 	{
 		id: 2,
-		name: "How a coding bootcamp may propel you further",
-		tags: ["react", "styled-components"],
-		date: "5 July, 2021",
-		imgSrc:
-			"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625479747640%2F7KzwP9nmj.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-		link: "https://codebucks.hashnode.dev/react-hamburger-menu",
-	},
-	{
-		id: 3,
 		name: "GitHub now scans for secret leaks in developer workflows",
 		tags: ["Github", "security"],
 		date: "5 April, 2022",
@@ -27,12 +18,21 @@ export const Blogs = [
 		link: "https://www.zdnet.com/article/github-now-scans-for-secret-leaks-in-push-workflows/",
 	},
 	{
-		id: 4,
+		id: 3,
 		name: "CnD NBA SHOW: Wolves Clinch the 7th Seed",
 		tags: ["Wolves", "7thSeed", "zone-coverage"],
 		date: "09 April, 2022",
 		imgSrc:
 			"https://media.bleacherreport.com/f_auto,w_554,h_369,q_auto,c_fill/br-cms/c2/44/f9/84/5599/4910/ba56/be2287890d14/crop_exact_gettyimages-1239822562-612x612.jpg",
 		link: "https://zonecoverage.com/2022/timberwolves/cnd-nba-show-wolves-clinch-the-7th-seed/",
+	},
+	{
+		id: 4,
+		name: "How a coding bootcamp may propel you further",
+		tags: ["project management", "imposter syndrome"],
+		date: "27 April, 2022",
+		imgSrc:
+			"https://firebasestorage.googleapis.com/v0/b/nucamp-production.appspot.com/o/Blog%2F20220427%2Fnucamp-is-gay-kevin-cover-blog.png?alt=media&token=1b7957c3-cc73-4923-a522-fc3dba27a14d",
+		link: "https://www.nucamp.co/blog/instructor-spotlight-kevin-gay",
 	},
 ];

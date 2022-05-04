@@ -1,78 +1,61 @@
 export const Work = [
 	{
 		id: 1,
-		name: "Pinterest Clone",
-		description: "A clone of Pinterest using React Native. ",
-		tags: ["reactnative", "typescript", "hooks"],
+		name: "King-Krypto",
+		description:
+			"A simple crypto wallet/tracker that uses coingecko's api, and recoil for state management.",
+		tags: ["reactnative", "redux", "recoil"],
 
 		demo: "",
-		github: "https://github.com/IMackie22/pinterestclone",
+		github: "https://github.com/IMackie22/king-krypto",
 	},
 	{
 		id: 2,
-		name: "Wiz Shoes",
-		description: "A simple ecomerce shoe site using ReactNative and Redux.",
-		tags: ["reactnative", "redux"],
+		name: "Amazon Clone",
+		description:
+			"A clone of Amazon build using ReactJS. With realtime authorization and hosting through firebase.",
+		tags: ["react", "redux", "firebase"],
 
-		demo: "",
-		github: "https://github.com/IMackie22/wizshoes",
+		demo: " https://clone-677d9.web.app",
+		github: "https://github.com/IMackie22/amazon-clone",
 	},
 	{
 		id: 3,
-		name: "Facebook Clone",
-		description:
-			"A clone of Facebook build using ReactJS. With realtime login from the fbdevelopers API.",
-		tags: ["react", "api", "tailwind"],
-
-		demo: "",
-		github: "https://github.com/IMackie22/fbclone",
-	},
-	{
-		id: 4,
-		name: "Real Homes App",
-		description:
-			"A simple modern real estate app using ReactJS and NextJs. With rental properties and for-sale properties. To using an API to fetch data.",
-		tags: ["react", "nextjs", "api"],
-
-		demo: "",
-		github: "https://github.com/IMackie22/realhomesapp",
-	},
-	{
-		id: 5,
-		name: "Todo App(ReactNative + Hooks)",
-		description: "A simple todo app build using Hooks.",
-		tags: ["reactnative", "hooks"],
-
-		demo: "",
-		github: "https://github.com/IMackie22/todoApp",
-	},
-	{
-		id: 6,
-		name: "Millionaire Quiz (React + Hooks)",
+		name: "Millionaire Quiz",
 		description: "A reponsive React millionaire quiz. Built from scratch.",
-		tags: ["react", "html", "css"],
+		tags: ["react", "html/css", "firebase"],
 
-		demo: "",
+		demo: "https://millionaire-quiz-78da9.web.app/",
 		github: "https://github.com/IMackie22/millionairequiz",
 	},
 	{
-		id: 7,
-		name: "Muzik Player",
+		id: 4,
+		name: "Auggiez Movies",
 		description:
-			"A reponsive ReactJS music app that uses the spotify API. Built from scratch.",
-		tags: ["react", "api", "css"],
+			"A fully reponsive UI NextJs movie app that uses heroicons, tailwind css, and restAPI that fetches data from tmdb.",
+		tags: ["nextjs", "tailwindcss", "vercel"],
 
-		demo: "",
-		github: "https://github.com/IMackie22/muzikplayer",
+		demo: "https://auggiez.vercel.app/",
+		github: "https://github.com/IMackie22/auggiez",
 	},
 	{
-		id: 8,
-		name: "Uber Clone (ReactNative + Redux)",
+		id: 5,
+		name: "Uber Clone",
 		description:
-			"A clone of Uber using ReactNative. With realtime fetching prices, location, and distance using the GoogleMaps API.",
+			"Realtime fetching prices, location, and distance using the GoogleMaps API.",
 		tags: ["reactnative", "redux", "googlemapsapi"],
 
 		demo: "",
 		github: "https://github.com/IMackie22/uberclone",
+	},
+	{
+		id: 6,
+		name: "Journiez",
+		description:
+			"A UI React Booking and Reservation app, and hosted on firebase",
+		tags: ["react", "css", "firebase"],
+
+		demo: "https://journiez-f2884.web.app",
+		github: "https://github.com/IMackie22/journiez",
 	},
 ];

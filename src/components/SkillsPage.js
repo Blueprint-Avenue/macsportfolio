@@ -1,11 +1,12 @@
 import React from "react";
-import styled, { ThemeProvider } from "styled-components";
-import { lightTheme } from "./Themes";
-import { Design, Develop } from "./AllSvgs";
+import styled, {ThemeProvider} from "styled-components";
+import {lightTheme} from "./Themes";
+import {Design, Develop} from "./AllSvgs";
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 import ParticleComponent from "../subComponents/ParticleComponent";
+import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
 	background-color: ${(props) => props.theme.body};
@@ -50,7 +51,7 @@ const Title = styled.h2`
 		}
 	}
 
-	&: * >first-child {
+	& > *:first-child {
 		margin-right: 1rem;
 	}
 `;
@@ -124,19 +125,17 @@ const SkillsPage = () => {
 					<Description>
 						<strong>Skills</strong>
 						<p>
-							Html, Css, Js, React, React-Native, Next Js, Redux, Sass,
-							Bootstrap, Tailwind, MongoDb, NodeJs, Express, Firebase etc.
-						</p>
-						<p>
-							Adobe Suite (Photoshop, Premier Pro, etc.), Microsoft Office, and
-							Final Cut Pro.
+							HTML, CSS, Javascript, MERN, Next Js, Redux, Bootstrap, Tailwind,
+							Firebase, Adobe Suite (Photoshop, InDesign, etc.), Microsoft
+							Office, and Final Cut Pro.
 						</p>
 					</Description>
 					<Description>
 						<strong className="strong">Tools</strong>
-						<p>VScode, Github, Codepen, Adobe Suite etc.</p>
+						<p>VScode, Github, Codepen</p>
 					</Description>
 				</Main>
+				<BigTitle text="SKILLS" top="80%" left="30%" />
 			</Box>
 		</ThemeProvider>
 	);

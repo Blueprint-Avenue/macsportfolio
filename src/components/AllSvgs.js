@@ -23,7 +23,7 @@ export const PowerBtn = (props) => {
 export const Github = (props) => {
 	return (
 		<svg
-			color="#00092C"
+			color="#FF5F00"
 			aria-hidden="true"
 			data-prefix="fab"
 			data-icon="github"
