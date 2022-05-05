@@ -1,21 +1,20 @@
-import React, { useEffect, useRef } from "react";
-import styled, { ThemeProvider } from "styled-components";
-import { DarkTheme } from "./Themes";
+import React, {useEffect, useRef} from "react";
+import styled, {ThemeProvider} from "styled-components";
+import {DarkTheme, mediaQueries} from "./Themes";
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
-import { Work } from "../data/WorkData";
+import {Work} from "../data/WorkData";
 import Card from "../subComponents/Card";
-import { Basketball } from "./AllSvgs";
+import {Basketball} from "./AllSvgs";
 import BigTitle from "../subComponents/BigTitle";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 const Box = styled.div`
 	background-color: ${(props) => props.theme.body};
 	height: 400vh;
 	position: relative;
 	display: flex;
-	align-items: center;
 	background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
 `;
 
@@ -33,6 +32,31 @@ const Main = styled(motion.ul)`
 	height: 40vh;
 	display: flex;
 	color: #eeeeee;
+
+	${mediaQueries(50)`
+
+
+        left:calc(8rem + 15vw);
+
+  `};
+
+	${mediaQueries(40)`
+  top: 30%;
+
+        left:calc(6rem + 15vw);
+
+  `};
+
+	${mediaQueries(40)`
+
+        left:calc(2rem + 15vw);
+
+  `};
+	${mediaQueries(25)`
+
+        left:calc(1rem + 15vw);
+
+  `};
 `;
 
 const Rotate = styled.span`
@@ -43,10 +67,29 @@ const Rotate = styled.span`
 	width: 80px;
 	height: 80px;
 	z-index: 1;
+
+	${mediaQueries(40)`
+     width:60px;
+         height:60px;
+       svg{
+         width:60px;
+         height:60px;
+       }
+
+  `};
+	${mediaQueries(25)`
+        width:50px;
+         height:50px;
+        svg{
+         width:50px;
+         height:50px;
+       }
+
+  `};
 `;
 
 const container = {
-	hidden: { opacity: 0 },
+	hidden: {opacity: 0},
 	show: {
 		opacity: 1,
 		transition: {

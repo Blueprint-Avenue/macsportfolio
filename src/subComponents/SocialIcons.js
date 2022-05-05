@@ -86,7 +86,7 @@ const SocialIcons = (props) => {
 					/>
 				</NavLink>
 			</motion.div>
-			<motion.div
+			{/* <motion.div
 				initial={{
 					transform: "scale(0)",
 				}}
@@ -104,7 +104,7 @@ const SocialIcons = (props) => {
 						fill={props.theme === "dark" ? DarkTheme : lightTheme}
 					/>
 				</NavLink>
-			</motion.div>
+			</motion.div> */}
 			<Line
 				initial={{
 					height: 0,

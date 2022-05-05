@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import styled, { keyframes } from "styled-components";
+import React, {useState} from "react";
+import styled, {keyframes} from "styled-components";
 import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
-import { NavLink } from "react-router-dom";
-import { Basketball } from "./AllSvgs";
+import {NavLink} from "react-router-dom";
+import {Basketball} from "./AllSvgs";
 import Intro from "./Intro";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
+import {mediaQueries} from "./Themes";
 
 const MainContainer = styled.div`
 	background: ${(props) => props.theme.body};
@@ -24,6 +25,17 @@ const MainContainer = styled.div`
 		font-weight: 500;
 	}
 	// background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+	h2 {
+		${mediaQueries(40)`
+      font-size:1.2em;
+
+  `};
+
+		${mediaQueries(30)`
+      font-size:1em;
+
+  `};
+	}
 `;
 
 const Container = styled.div`
@@ -47,6 +59,10 @@ const BLOG = styled(NavLink)`
 	transform: rotate(90deg) translate(-50%, -50%);
 	text-decoration: none;
 	z-index: 3;
+
+	@media only screen and (max-width: 50em) {
+		text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+	}
 `;
 
 const WORK = styled(NavLink)`
@@ -57,6 +73,10 @@ const WORK = styled(NavLink)`
 	transform: translate(-50%, -50%) rotate(-90deg);
 	text-decoration: none;
 	z-index: 1;
+
+	@media only screen and (max-width: 50em) {
+		text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+	}
 `;
 
 const BottomBar = styled.div`
@@ -115,6 +135,17 @@ const Center = styled.button`
 		display: ${(props) => (props.click ? "none" : "inline-block")};
 		padding-top: 1rem;
 	}
+
+	@media only screen and (max-width: 50em) {
+		top: ${(props) => (props.click ? "90%" : "50%")};
+		left: ${(props) => (props.click ? "90%" : "50%")};
+		width: ${(props) => (props.click ? "80px" : "150px")};
+		height: ${(props) => (props.click ? "80px" : "150px")};
+	}
+	@media only screen and (max-width: 30em) {
+		width: ${(props) => (props.click ? "40px" : "150px")};
+		height: ${(props) => (props.click ? "40px" : "150px")};
+	}
 `;
 const DarkDiv = styled.div`
 	position: absolute;
@@ -166,19 +197,19 @@ export const Main = () => {
 				</Center>
 				<Contact
 					target="_blank"
-					to={{ pathname: "mailto:skmcintosh20@gmail.com" }}
+					to={{pathname: "mailto:skmcintosh20@gmail.com"}}
 					click={click}
 				>
 					<motion.h2
 						initial={{
 							y: -200,
-							transition: { type: "spring", duration: 1.5, delay: 1 },
+							transition: {type: "spring", duration: 1.5, delay: 1},
 						}}
 						animate={{
 							y: 0,
-							transition: { type: "spring", duration: 1.5, delay: 1 },
+							transition: {type: "spring", duration: 1.5, delay: 1},
 						}}
-						whileHover={{ scale: 1.1 }}
+						whileHover={{scale: 1.1}}
 						whileTap={0.9}
 					>
 						Say hi..
@@ -188,13 +219,13 @@ export const Main = () => {
 					<motion.h2
 						initial={{
 							y: -200,
-							transition: { type: "spring", duration: 1.5, delay: 1 },
+							transition: {type: "spring", duration: 1.5, delay: 1},
 						}}
 						animate={{
 							y: 0,
-							transition: { type: "spring", duration: 1.5, delay: 1 },
+							transition: {type: "spring", duration: 1.5, delay: 1},
 						}}
-						whileHover={{ scale: 1.1 }}
+						whileHover={{scale: 1.1}}
 						whileTap={0.9}
 					>
 						BLOG
@@ -204,13 +235,13 @@ export const Main = () => {
 					<motion.h2
 						initial={{
 							y: -200,
-							transition: { type: "spring", duration: 1.5, delay: 1 },
+							transition: {type: "spring", duration: 1.5, delay: 1},
 						}}
 						animate={{
 							y: 0,
-							transition: { type: "spring", duration: 1.5, delay: 1 },
+							transition: {type: "spring", duration: 1.5, delay: 1},
 						}}
-						whileHover={{ scale: 1.1 }}
+						whileHover={{scale: 1.1}}
 						whileTap={0.9}
 					>
 						Work
@@ -221,13 +252,13 @@ export const Main = () => {
 						<motion.h2
 							initial={{
 								y: 200,
-								transition: { type: "spring", duration: 1.5, delay: 1 },
+								transition: {type: "spring", duration: 1.5, delay: 1},
 							}}
 							animate={{
 								y: 0,
-								transition: { type: "spring", duration: 1.5, delay: 1 },
+								transition: {type: "spring", duration: 1.5, delay: 1},
 							}}
-							whileHover={{ scale: 1.1 }}
+							whileHover={{scale: 1.1}}
 							whileTap={0.9}
 						>
 							About Me..
@@ -237,13 +268,13 @@ export const Main = () => {
 						<motion.h2
 							initial={{
 								y: 200,
-								transition: { type: "spring", duration: 1.5, delay: 1 },
+								transition: {type: "spring", duration: 1.5, delay: 1},
 							}}
 							animate={{
 								y: 0,
-								transition: { type: "spring", duration: 1.5, delay: 1 },
+								transition: {type: "spring", duration: 1.5, delay: 1},
 							}}
-							whileHover={{ scale: 1.1 }}
+							whileHover={{scale: 1.1}}
 							whileTap={0.9}
 						>
 							My Skills..{" "}

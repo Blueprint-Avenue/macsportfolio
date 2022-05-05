@@ -6,7 +6,7 @@ export const Work = [
 			"A simple crypto wallet/tracker that uses coingecko's api, and recoil for state management.",
 		tags: ["reactnative", "redux", "recoil"],
 
-		demo: "",
+		demo: "https://github.com/IMackie22/king-krypto",
 		github: "https://github.com/IMackie22/king-krypto",
 	},
 	{
@@ -45,14 +45,14 @@ export const Work = [
 			"Realtime fetching prices, location, and distance using the GoogleMaps API.",
 		tags: ["reactnative", "redux", "googlemapsapi"],
 
-		demo: "",
+		demo: "https://github.com/IMackie22/uberclone",
 		github: "https://github.com/IMackie22/uberclone",
 	},
 	{
 		id: 6,
 		name: "Journiez",
 		description:
-			"A UI React Booking and Reservation app, and hosted on firebase",
+			"A UI React Booking and Reservation app, that is hosted on firebase",
 		tags: ["react", "css", "firebase"],
 
 		demo: "https://journiez-f2884.web.app",

@@ -17,3 +17,15 @@ export const DarkTheme = {
 	backgroundImage:
 		"https://www.transparenttextures.com/patterns/basketball.png",
 };
+
+export const breakpoints = {
+	sm: 20, //em
+	md: 30,
+	lg: 45,
+	xl: 60,
+	xxl: 75,
+};
+
+export const mediaQueries = (key) => {
+	return (style) => `@media (max-width: ${key}em) { ${style} }`;
+};
